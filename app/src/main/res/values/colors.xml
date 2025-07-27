@@ -1,0 +1,37 @@
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray_light">#FFF5F5F5</color>
+    <color name="gray_medium">#FF9E9E9E</color>
+    <color name="gray_dark">#FF424242</color>
+    <color name="red_error">#FFD32F2F</color>
+    <color name="green_success">#FF388E3C</color>
+    <color name="blue_info">#FF1976D2</color>
+    <color name="orange_warning">#FFF57C00</color>
+    
+    <!-- Material Design Colors -->
+    <color name="primary">#FF212121</color>
+    <color name="primary_variant">#FF000000</color>
+    <color name="secondary">#FF424242</color>
+    <color name="secondary_variant">#FF1B1B1B</color>
+    <color name="background">#FFFFFFFF</color>
+    <color name="surface">#FFFFFFFF</color>
+    <color name="error">#FFB00020</color>
+    <color name="on_primary">#FFFFFFFF</color>
+    <color name="on_secondary">#FFFFFFFF</color>
+    <color name="on_background">#FF000000</color>
+    <color name="on_surface">#FF000000</color>
+    <color name="on_error">#FFFFFFFF</color>
+    
+    <!-- Dark theme colors -->
+    <color name="primary_dark">#FFFFFFFF</color>
+    <color name="primary_variant_dark">#FFE0E0E0</color>
+    <color name="secondary_dark">#FFE0E0E0</color>
+    <color name="secondary_variant_dark">#FFBDBDBD</color>
+    <color name="background_dark">#FF121212</color>
+    <color name="surface_dark">#FF1E1E1E</color>
+    <color name="on_primary_dark">#FF000000</color>
+    <color name="on_secondary_dark">#FF000000</color>
+    <color name="on_background_dark">#FFFFFFFF</color>
+    <color name="on_surface_dark">#FFFFFFFF</color>
+</resources>

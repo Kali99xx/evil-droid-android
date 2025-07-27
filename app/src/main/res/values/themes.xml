@@ -1,0 +1,77 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.EvilDroid" parent="Theme.Material3.DayNight">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary_variant</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnBackground">@color/on_background</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <!-- Error color -->
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/on_error</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <!-- Dark theme -->
+    <style name="Theme.EvilDroid.Dark" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary">@color/primary_dark</item>
+        <item name="colorPrimaryVariant">@color/primary_variant_dark</item>
+        <item name="colorOnPrimary">@color/on_primary_dark</item>
+        <item name="colorSecondary">@color/secondary_dark</item>
+        <item name="colorSecondaryVariant">@color/secondary_variant_dark</item>
+        <item name="colorOnSecondary">@color/on_secondary_dark</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:colorBackground">@color/background_dark</item>
+        <item name="colorSurface">@color/surface_dark</item>
+        <item name="colorOnBackground">@color/on_background_dark</item>
+        <item name="colorOnSurface">@color/on_surface_dark</item>
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/on_error</item>
+        <item name="android:windowBackground">@color/background_dark</item>
+    </style>
+
+    <!-- Button styles -->
+    <style name="EvilDroid.Button" parent="Widget.Material3.Button">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <!-- EditText styles -->
+    <style name="EvilDroid.EditText" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- TextView styles -->
+    <style name="EvilDroid.TextView.Title" parent="Widget.Material3.TextView">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/colorOnBackground</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">24dp</item>
+    </style>
+
+    <style name="EvilDroid.TextView.Log" parent="Widget.Material3.TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:background">@color/surface_dark</item>
+    </style>
+</resources>

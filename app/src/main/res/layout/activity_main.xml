@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/EvilDroid.TextView.Title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Target Package Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilTargetPackage"
+        style="@style/EvilDroid.EditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/hint_target_package"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etTargetPackage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- APK File Path Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilApkPath"
+        style="@style/EvilDroid.EditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/hint_apk_path"
+        app:layout_constraintEnd_toStartOf="@id/btnBrowseApk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilTargetPackage">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etApkPath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textUri"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Browse APK Button -->
+    <Button
+        android:id="@+id/btnBrowseApk"
+        style="@style/EvilDroid.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/browse_apk"
+        app:layout_constraintBottom_toBottomOf="@id/tilApkPath"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tilApkPath" />
+
+    <!-- Button Container -->
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilApkPath">
+
+        <!-- Check Root Button -->
+        <Button
+            android:id="@+id/btnCheckRoot"
+            style="@style/EvilDroid.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/check_root" />
+
+        <!-- Install APK Button -->
+        <Button
+            android:id="@+id/btnInstallApk"
+            style="@style/EvilDroid.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/install_apk" />
+
+        <!-- Run Payload Button -->
+        <Button
+            android:id="@+id/btnRunPayload"
+            style="@style/EvilDroid.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/run_payload" />
+
+        <!-- Clear Log Button -->
+        <Button
+            android:id="@+id/btnClearLog"
+            style="@style/EvilDroid.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gray_medium"
+            android:text="@string/clear_log" />
+    </LinearLayout>
+
+    <!-- Log Output Label -->
+    <TextView
+        android:id="@+id/tvLogLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/log_output"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonContainer" />
+
+    <!-- Log Output (in a ScrollView) -->
+    <ScrollView
+        android:id="@+id/scrollViewLog"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/surface_dark"
+        android:padding="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLogLabel">
+
+        <TextView
+            android:id="@+id/tvLog"
+            style="@style/EvilDroid.TextView.Log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            tools:text="Log output will appear here..." />
+    </ScrollView>
+
+    <!-- Progress Bar (initially hidden) -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

